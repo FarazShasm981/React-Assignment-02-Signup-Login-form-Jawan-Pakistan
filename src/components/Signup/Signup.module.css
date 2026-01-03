@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    color: #fff;
+    width: 420px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 30px 20px;
+    border: 2px solid rgba(255, 255, 255, .2);
+     backdrop-filter: blur(20px);
+}
+
+.container h1 {
+    font-size: 36px;
+    margin: 20px;
+    text-align: center;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.inputBox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border:none;
+    border-radius: 40px;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    padding: 20px 45px 20px 20px;
+}
+input::placeholder{
+    color: #fff;
+}
+.container .rememberForget{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+
+}
+.rememberForget label input
+{
+    accent-color: #fff;
+    margin-right: 4px;
+}
+.rememberForget a{
+    color: #fff;
+    text-decoration: none;
+}
+.rememberForget a:hover{
+    text-decoration: underline;
+}
+.btnGroup{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+}
+.btnGroup button{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border: none;
+    outline: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btnGroup .login,
+.btnGroup .signup{
+    background: transparent;
+   
+}
+.btnGroup .login:hover{
+    background-color: dodgerblue; 
+    border: none;
+    transition: all .1s ease-in;
+    font-size: 18px;
+}
+.btnGroup .signup:hover{
+    background-color: dodgerblue;
+    border: none;
+    transition: all .1s ease-in;
+    font-size: 18px;
+}
+.icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+.registerLink{
+    text-align: center;
+    font-size: 14.5px;
+    margin: 20px 0 15px;
+}
+.registerLink p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+.registerLink p a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
