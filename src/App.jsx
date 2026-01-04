@@ -1,10 +1,13 @@
 import Signup from "./components/Signup/Signup";
 import "./App.css";
+import { motion } from 'motion/react';
 
 function App() {
   return (
     <>
-      <Signup />
+      <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{duration:.2}}>
+        <Signup />
+      </motion.div>
     </>
   );
 }
