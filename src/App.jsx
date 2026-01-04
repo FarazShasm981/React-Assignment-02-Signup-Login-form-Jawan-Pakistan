@@ -5,7 +5,7 @@ import { motion } from 'motion/react';
 function App() {
   return (
     <>
-      <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{duration:.2}}>
+      <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{duration:.8}}>
         <Signup />
       </motion.div>
     </>
